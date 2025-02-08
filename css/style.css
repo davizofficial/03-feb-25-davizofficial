@@ -1,0 +1,154 @@
+/* Reset and Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.bmi-calculator {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #4f7df9;
+}
+
+.input-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="#333" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 6px;
+    cursor: pointer;
+}
+
+button#calculate-bmi {
+    width: 100%;
+    padding: 15px;
+    background-color: #4f7df9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#calculate-bmi:hover {
+    background-color: #04f;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#bmi-result {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4f7df9;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input-group label {
+        font-size: 1rem;
+    }
+
+    .input-group input,
+    .input-group select {
+        padding: 12px;
+    }
+
+    button#calculate-bmi {
+        padding: 12px;
+    }
+
+    .result h2 {
+        font-size: 1.25rem;
+    }
+
+    #bmi-result {
+        font-size: 2rem;
+    }
+
+    .comment {
+        font-size: 1rem;
+    }
+}
