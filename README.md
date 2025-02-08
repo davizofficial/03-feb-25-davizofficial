@@ -15,7 +15,7 @@ Kalkulator BMI (Body Mass Index) adalah sebuah aplikasi sederhana yang dirancang
 ## Instalasi
 1. **Clone Repositori**: Clone repositori ini ke komputer Anda.
     ```bash
-    git clone https://github.com/revou-fundamental-course/03-feb-25-davizofficial.git
+    git clone https://github.com/davizofficial/03-feb-25-davizofficial.git
     ```
 2. **Buka File**: Buka file `index.html` di browser favorit Anda.
     ```bash
